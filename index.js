@@ -1,6 +1,18 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 3000
+
+const port = process.env.Port
+
+const connection = require('knex')({
+    client: 'mysql2',
+    connection: {
+        host: process.env.host,
+        user: process.env.user,
+        password: process.env.password,
+        database: process.env.database
+    }
+})
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
