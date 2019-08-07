@@ -9,3 +9,6 @@
 - Ejs
 - Knex
 - Mysql2
+- Slug
+- Models
+- Refactoring
