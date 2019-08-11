@@ -11,4 +11,7 @@
 - Mysql2
 - Slug
 - Models
+- Controllers
+- Routes
+- App
 - Refactoring
