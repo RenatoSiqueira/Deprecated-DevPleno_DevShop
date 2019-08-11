@@ -9,6 +9,12 @@ const getProductsByCategoryId = db => async (id) => {
     return products
 }
 
+const getProductById = db => async (id) => {
+    const product = await db('products').select('*').where('id', id)
+    return product[0]
+}
+
 module.exports = {
-    getProductsByCategoryId
+    getProductsByCategoryId,
+    getProductById
 }
