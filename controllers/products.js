@@ -5,6 +5,6 @@ const getProduct = db => async (req, res) => {
     res.render('product-detail', { product: prod })
 }
 
-module.exports {
+module.exports = {
     getProduct
 }
