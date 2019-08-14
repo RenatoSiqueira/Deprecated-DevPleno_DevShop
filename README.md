@@ -15,3 +15,7 @@
 - Routes
 - App
 - Refactoring
+- Express-Session
+- BCrypt
+- Body-Parser
+- Authentication
