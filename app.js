@@ -2,7 +2,7 @@ const init = db => {
     const express = require('express')
     const app = express()
 
-    const category = require('./models/category')
+    const category = require('./models/category')(db)
     const routes = require('./routes')
 
     const bodyParser = require('body-parser')
@@ -20,7 +20,7 @@ const init = db => {
     app.use(express.static('public'))
 
     app.use(async (req, res, next) => {
-        const categories = await category.getCategories(db)()
+        const categories = await category.getCategories()
         const { user } = req.session
         res.locals = { categories, user }
         next()
