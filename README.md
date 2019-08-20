@@ -19,3 +19,11 @@
 - BCrypt
 - Body-Parser
 - Authentication
+- Rota Administrativa
+- Criando Categoria
+- Validação de Dados com Joi
+- Refactoring
+- Mostrando Erros Amigáveis
+- Exclusão de Categorias (Com Validação)
+- Atualizando Categorias (Com Validação)
+- Organizando Dependências
