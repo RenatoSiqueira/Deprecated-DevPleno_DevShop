@@ -27,3 +27,4 @@
 - Exclusão de Categorias (Com Validação)
 - Atualizando Categorias (Com Validação)
 - Organizando Dependências
+- Paginação
